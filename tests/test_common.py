@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 from qiskit import QuantumCircuit
 
-from simon_qcrypto.common.bitstrings import bitstring_to_int, bits_to_int, int_to_bits, xor_ints
+from simon_qcrypto.common.bitstrings import bits_to_int, bitstring_to_int, int_to_bits, xor_ints
 from simon_qcrypto.common.gf2 import ints_to_matrix, matrix_rank_mod2, recover_hidden_xor
 from simon_qcrypto.common.qiskit_runner import get_counts, get_statevector, marginal_probabilities
 

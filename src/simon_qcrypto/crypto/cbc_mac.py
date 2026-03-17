@@ -1,7 +1,7 @@
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import Iterable
 
 from simon_qcrypto.common.random_utils import make_rng, random_permutation_table
 

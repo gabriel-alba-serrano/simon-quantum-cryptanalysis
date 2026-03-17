@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Iterable
+from collections.abc import Iterable
 
 
 def int_to_bits(value: int, width: int) -> list[int]:
