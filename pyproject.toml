@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simon-qcrypto"
+version = "0.1.0"
+description = "Educational implementations of Simon's algorithm and toy cryptographic applications."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "galba" }
+]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "qiskit>=1.2",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+  "ruff>=0.8",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
