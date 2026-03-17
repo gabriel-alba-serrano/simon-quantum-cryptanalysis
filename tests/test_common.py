@@ -19,7 +19,7 @@ def test_bitstring_helpers() -> None:
 def test_gf2_recovery() -> None:
     matrix = ints_to_matrix([0b110, 0b101], 3)
     assert matrix_rank_mod2(matrix) == 2
-    assert recover_hidden_xor([0b110, 0b101], 3) == 0b011
+    assert recover_hidden_xor([0b110, 0b101], 3) == 0b111
 
 
 def test_qiskit_statevector_runner() -> None:
